@@ -14,7 +14,7 @@ const mailSender = {
   mailOptions(data) {
     return {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
+      to: process.env.RECEIVER,
       subject: data?.subject,
       html: `<!DOCTYPE html>
             <html lang="en">
