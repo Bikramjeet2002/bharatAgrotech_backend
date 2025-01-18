@@ -19,6 +19,12 @@ app.use(
 );
 
 app.use("/contact", contactRouter);
+app.get("/",(req,res)=>{
+  return res.json({
+    message:"Server is up"
+    
+  })
+})
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
